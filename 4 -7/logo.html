@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<input type="" name=""><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+     <body>
+      <input class="combine" id="input1" disabled="true"></input>
+      <input class="combine" id="input2" disabled="true"></input>
+      <input class="combine" id="input3" disabled="true"></input>
+      <input class="combine" id="input4" disabled="true"></input>
+      <input class="combine" id="input5" disabled="true"></input>
+      <input class="combine" id="input6" disabled="true"></input>
+
+      <input class="combine" id="Voltes5" disabled="true" size="45"></input>
+    </body>
+
+<script type="text/javascript">
+      <button id="setVal">Set</button>
+      $(document).ready(function(){ 
+  $('#setVal').on('click',function(){
+
+        jQuery(function(){
+    var form = $('.combine');
+    form.each(function(){
+    $('.Voltes5').append($(this).text()+ ' ');
+    });
+    });
+        });
+        });
+</script>
+</html>

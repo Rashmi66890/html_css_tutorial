@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+    function light(show)
+     
+        {
+        var pic;
+        if(show==0)
+        {
+            pic="bulboff.jpeg";
+        } else{
+            pic="bulbon.png";
+        }
+        document.getElementById('bulb').src=pic;
+
+    }
+</script>
+</head>
+
+<body>
+
+<h2> Decoration Bulb </h2>
+
+<img id=bulb  src="bulboff.jpeg" width ="100px" height="80px">
+<p> 
+    <button type=" button" onclick="light(1)"> ON </button>
+    <button type=" button" onclick="light(0)"> OFF </button>
+</p>
+</body>
+</html>
+    

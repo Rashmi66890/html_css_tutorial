@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Using innerText</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+     fName: <input type="text" id="txtfirstname" value="" />
+      lName: <input type="text" id="txtlastname" value="" />
+    
+    <p>
+        <input type="button" id="bt" value="Button" onclick="changeLabel()"  />
+    </p>
+    first name : <label id="lblf"> </label><br><br>
+     last name : <label id="lbll"> </label><br><br>
+    
+<script>
+    function changeLabel() {
+        let lblf = document.getElementById('lblf');
+          let lbll = document.getElementById('lbll');
+        let fname = document.getElementById('txtfirstname').value;
+        let lname= document.getElementById('txtlastname').value;
+         lblf.innerText = fname;
+           lbll.innerText = lname;
+    }
+   </script>
+</html>
